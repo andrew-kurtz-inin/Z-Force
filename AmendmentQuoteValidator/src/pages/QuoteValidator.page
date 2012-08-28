@@ -1,0 +1,19 @@
+<apex:page id="page" standardController="zqu__Quote__c"
+	extensions="AmendmentQuoteValidator" title="Create Amendments"
+	tabStyle="zqu__Quote__c" action="{!onload}">
+	<apex:sectionHeader subtitle="Create Amendments" title="Quote" />
+	<apex:outputPanel id="errorMessage">
+		<apex:pageMessages />
+	</apex:outputPanel>
+	<apex:form >
+		<apex:pageBlock title="" id="amendmentblock">
+			<apex:pageBlockButtons location="bottom" id="pageButtonBar">
+				<apex:commandButton value="Continue" id="pageSaveButton"
+					action="{!updateQuote}" />
+				<apex:commandButton value="Cancel" immediate="true"
+					action="{!cancel}" />
+			</apex:pageBlockButtons>
+    The subscription that is being amended has been renewed. Do you want to continue to create this amendment on the latest version of the subscription?
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

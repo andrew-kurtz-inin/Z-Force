@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amendment Quote Validator</fullName>
+    <description>This sample code package is part of ZCommerce for Salesforce Sample Code Suite.  It includes a page to validate whether the Amendment Quote is amending on a subscription that has been renewed at Zuora.  If the subscription is already renewed it will provide an option to the end user to create an amendment on the latest version of the subscription.</description>
+    <types>
+        <members>AmendmentQuoteValidator</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>QuoteValidator</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>zqu__Quote__c.Send_to_ZBilling_Custom</members>
+        <name>WebLink</name>
+    </types>
+    <version>22.0</version>
+</Package>
