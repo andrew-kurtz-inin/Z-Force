@@ -31,6 +31,21 @@ INTRODUCTION
 
 This sample code package is part of ZCommerce for Salesforce Sample Code Suite. It includes a page to validate whether the Amendment Quote is amending on a subscription that has been renewed at Zuora. If the subscription is already renewed it will provide an option to the end user to create an amendment on the latest version of the subscription.
 
+USE-CASES
+---------
+This package contains a custom "Send to Z-Billing" button that can replace the ZQuotes "Send to Z-Billing" button on Quote Layout Amendment 5.0.  The use case that this custom Send to Z-Billing button addresses is: 
+
+- A ZQuotes user has created an Amendment quote on an existing auto-renewed subscription.
+- Before the Amendment quote is sent to Z-Billing, the subscription has already been auto-renewed one or more times at Zuora side.
+- Now the user sends the Amendment quote to Z-Billing using the new custom Send to Z-Billing button.
+- The page detects that there is a later version of the Subscription created by one or more renewals.  A message will be presented to the user whether the user wants to continue to create an amendment on the latest version of the subscription.
+- If the user clicks "Continue", the Amendment Preview page will be displayed; Otherwise, if the user clicks "Cancel", he/she will be directed back to the Quote detail page.
+
+Please note that this intermediate page (Amendment Quote Validator) will only appear if the following conditions are met :
+1. The user is working on an Amendment quote; 
+2. The subscription that is being amended is not the latest version; 
+3. Only Renewal type of amendments have been created from the current version of the subscription, to the latest version of the subscription.  
+
 PRE-REQUISITES
 -------------
 
@@ -50,7 +65,7 @@ This will install sample code unmanaged package into your Salesforce.com organiz
 CONFIGURATION INSTRUCTIONS 
 --------------------------
 
-1. Add "Send to Z-Billing (Custom)" button onto the following Quote V5.0 Layouts: 
+1. Replace button "Send to Z-Billing" with the new button "Send to Z-Billing (Custom)" button on the following Quote V5.0 Layout: 
 Quote Layout Amendment V5.0
 
 2. The sample code uses Z360 to connect to Zuora.  So you need to configure the Zuora connection in Z360.
