@@ -51,71 +51,51 @@ Please send any GitHub-related comments and feedback to Dev-Support@zuora.</p>
 
 <h2><strong>Pre-Requisites</strong></h2>
 
-<ul>
-<li>
 <p>The Z-Force Sample Code Suite includes a set of unmanaged packages that depend on the following Z-Force managed packages:</p>
 
 <ul>
 <li>Z-Force 360 Version 2.2 or above</li>
 <li>Z-Force Quotes Version 5.3 or above</li>
-</ul>
-</li>
-<li>
-<p>If you do not have Force.com Migration Tool already installed and you would like to use the Force.com Migration Tool to deploy the sample code to your Salesforce.com organization, please follow the instructions below: </p>
+</ul><p><strong>Order Builder Sample Code</strong>
+This Z-Force Sample Code package provides a reference implementation of creating amendment using Z-Force Order Builder Apex Components.</p>
 
-<ul>
-<li>Visit <a href="http://java.sun.com/javase/downloads/index.jsp">http://java.sun.com/javase/downloads/index.jsp</a> and install Java JDK, Version 6.1 or greater on the deployment machine.</li>
-<li>Visit <a href="http://ant.apache.org/">http://ant.apache.org/</a> and install Apache Ant, Version 1.6 or greater on the deployment machine.</li>
-<li>Set up the environment variables (such as ANT_HOME, JAVA_HOME, and PATH) as specified in the Ant Installation Guide at <a href="http://ant.apache.org/manual/install.html">http://ant.apache.org/manual/install.html</a>.</li>
-<li>Log in to Salesforce on your deployment machine. Click Your Name | Setup | Develop | Tools, then click Force.com Migration Tool.</li>
-<li>Unzip the downloaded file to the directory of your choice. The Zip file contains a Jar file containing the ant tasks: ant-salesforce.jar</li>
-<li>Copy the ant-salesforce.jar file from the unzipped file into the ant lib directly.  The ant lib directly is located in the root folder of your Ant installation. </li>
-</ul>
-</li>
-</ul><h2><strong>Installation Instructions</strong></h2>
+<h2><strong>Custom Product Selector</strong></h2>
 
-<ul>
-<li>
-<p>Open ZForce/build.properties, and specify the login credentials for your Salesforce.com organization: </p>
+<p>Custom Product Selector sample code package provides a reference implementation of a custom Product Selector with filtering and searching capabilities, built using Global Methods and Components.</p>
 
-<blockquote>
-<p>sf.username=</p>
+<h2><strong>Z-Checkout Integration</strong></h2>
 
-<p>sf.password= </p>
-</blockquote>
-</li>
-</ul><p>Please note that the password should be your login password concatenated with the security token.</p>
+<p>This sample implementation of Z-Checkout pages in Salesforce.com contains the following 3 scenarios: 
+(1) Create a payment method from a Billing Account detail page 
+(2) Create a payment method from Quote detail page that is associated with the quote that has been sent to Z-Billing. 
+(3) Create a subscription from a particular rate plan through Z-Checkout page</p>
 
-<ul>
-<li>
-<p>Navigate to Z-Force folder, and type the following in the command line: </p>
+<p>The newly created payment method will be set as the default payment method of the associated billing account, and "Auto-Pay" will be enabled for the associated billing account. </p>
 
-<blockquote>
-<p>ant deploy</p>
-</blockquote>
-</li>
-</ul><p>This will deploy all sample code packages to your Salesforce.com organization.</p>
+<p>The default payment method and the Auto-Pay information will be available on the Billing Account record in SFDC after the next SFDC Sync is run.</p>
 
-<p>Optionally, you can deploy one or more sample code packages individually into one or more Salesforce.com organizations. </p>
+<h2><strong>Product Bundling</strong></h2>
 
-<ul>
-<li>Navigate to Z-Force/ folder, for instance, Z-Force/InvoiceOwnerTransfer</li>
-<li>
-<p>Open build.properties file, and specify the login credentials for your Salesforce.com organization (for this specific sample code package)</p>
+<p>This Z-Force Sample Code package provides a reference implementation that allows product bundling capability.  </p>
 
-<blockquote>
-<p>sf.username=<br>
-sf.password= </p>
-</blockquote>
+<p>In this sample application, a Product Bundle contains one or more Product Rate Plans from different ZProducts. An end-user can add a product bundle to a quote.  Upon saving, all the rate plans associated with the product bundle will be added to the quote together.</p>
 
-<ul>
-<li>In command-line, type:</li>
-</ul>
-<blockquote>
-<p>ant deploy</p>
-</blockquote>
-</li>
-</ul><p>This will deploy the specific sample code package into your Salesforce.com organization.</p>
+<h2><strong>Quote Split</strong></h2>
+
+<p>This Z-Force Sample Code package provides a reference implementation that split single Quote(MasterQuote) into two Quotes(SubQuote) and sending to Z-Billing.</p>
+
+<h2><strong>Subscription Charges Updater</strong></h2>
+
+<p>This Z-Force Sample Code package provides a reference implementation that allows batch-update of subscription charges, and the term conditions of their related subscriptions.</p>
+
+<h2><strong>Amendment Quote Validator</strong></h2>
+
+<p>This Z-Force Sample Code package provides a reference implementation to validate whether the Amendment Quote is amending on a subscription that has been renewed at Zuora. If the subscription is already renewed it will provide an option to the end user to create an amendment on the latest version of the subscription.</p>
+
+<h2>
+<strong>Quote-to-Payment Processing Custom Trigger</strong> </h2>
+
+<p>This Z-Force Sample Code Package provides a reference implementation of the BeforeInsert Trigger on "Quote Processing Data" object, which is part of Z-Force Quotes feature "Mass Quote-to-Payment Processing".</p>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/zuora">zuora</a></p>
