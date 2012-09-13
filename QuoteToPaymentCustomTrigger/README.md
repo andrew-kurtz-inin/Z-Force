@@ -60,9 +60,9 @@ This package contains one BeforeInsertTrigger of the "Quote Processing Data" obj
 
 This trigger (QuoteValidationTrigger) contains the following business logic:
 * Gathers all quote numbers from the triggered records to be used. Default these Quote Processing Data records to be valid.
-* If the QuoteNumber of the corresponding QuoteProcessingData is blank, mark the Quote Processing Data as Invalid.
-* Retrieve quotes based on the QuoteNumber in the QuoteProcessingData records
-  * If the quote of the corresponding QuoteNumber does not exist, mark the QuoteProcessingData as invalid.
-  * If the PaymentAmount of the QuoteProcessingData record is not equal to the quote's total amount, mark the QuoteProcessingData as invalid.
-  * If the EffectiveDate of the QuoteProcessingData is a not-null value, set the Start Date of the corresponding quote to the EffectiveDate+1.
+* If the QuoteNumber of the corresponding Quote Processing Data is blank, mark the Quote Processing Data as Invalid.
+* Retrieve quotes based on the QuoteNumber in the Quote Processing Data records
+  * If the quote of the corresponding QuoteNumber does not exist, mark the Quote Processing Data as invalid.
+  * If the PaymentAmount of the Quote Processing Data record is not equal to the quote's total amount, mark the QuoteProcessingData as invalid.
+  * If the EffectiveDate of the Quote Processing Data is a not-null value, set the Start Date of the corresponding quote to the EffectiveDate+1.
 
