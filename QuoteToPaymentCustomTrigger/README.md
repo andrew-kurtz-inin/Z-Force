@@ -39,7 +39,7 @@
 > SOFTWARE, EVEN IF ADVISED OF THE
 > POSSIBILITY OF SUCH DAMAGE.
 
-**Zuora Z-Force Sample Code Package: Quote-to-Payment Custom Trigger Sample**
+**Quote-to-Payment Custom Trigger Sample Code**
 --
 
 **Introduction**
