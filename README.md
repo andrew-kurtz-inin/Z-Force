@@ -1,4 +1,3 @@
-
 > Copyright (c) 2012 Zuora, Inc.
 > 
 > Permission is hereby granted, free of
@@ -43,7 +42,7 @@
 **Zuora Z-Force Sample Code Suite**
 ======================
 
-INTRODUCTION
+Introduction
 --
 
 The Z-Force Sample Code Suite provides executable code examples in unmanaged Force.com packages. 
@@ -52,7 +51,7 @@ Zuora Support does not troubleshoot content from GitHub. The sample code is as a
 that has worked for previous implementations and was created by both Zuora and non-Zuora authors. 
 Please send any GitHub-related comments and feedback to Dev-Support@zuora.
 
-PRE-REQUISITES
+Pre-Requisites
 --
 
 * The Z-Force Sample Code Suite includes a set of unmanaged packages that depend on the following Z-Force managed packages:
@@ -68,7 +67,7 @@ PRE-REQUISITES
   * Copy the ant-salesforce.jar file from the unzipped file into the ant lib directly.  The ant lib directly is located in the root folder of your Ant installation. 
   * 
 
-INSTALLATION-INSTRUCTIONS
+Installation Instructions
 -------------------------
 
 * Open ZForce/build.properties, and specify the login credentials for your Salesforce.com organization: 
