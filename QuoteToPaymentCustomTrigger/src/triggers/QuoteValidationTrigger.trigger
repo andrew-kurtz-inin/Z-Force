@@ -58,7 +58,7 @@ trigger QuoteValidationTrigger on zqu__Quote_Processing_Data__c(before insert) {
         if (q.zqu__Is_Valid__c) {
           if (q.zqu__Effective_Date__c.addDays(1) > tempQuote.zqu__SubscriptionTermStartDate__c) {
             quotesToUpdate.add(new zqu__Quote__c(
-            Id = tempQuote.Id, zqu__SubscriptionTermStartDate__c = q.zqu__Effective_Date__c.addDays(1)));
+            Id = tempQuote.Id, zqu__StartDate__c = q.zqu__Effective_Date__c.addDays(1)));
           }
         }
       }
