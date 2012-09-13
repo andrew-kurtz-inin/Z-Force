@@ -1,5 +1,4 @@
 
-
 > Copyright (c) 2012 Zuora, Inc.
 > 
 > Permission is hereby granted, free of
@@ -72,15 +71,17 @@ PRE-REQUISITES
 INSTALLATION-INSTRUCTIONS
 -------------------------
 
-1. Open ZForce/build.properties, and specify the login credentials for your Salesforce.com organization: 
+* Open ZForce/build.properties, and specify the login credentials for your Salesforce.com organization: 
 
->sf.username=
->sf.password= 
+    >sf.username=
+    
+    >sf.password= 
 
 Please note that the password should be your login password concatenated with the security token.
 
-2. Navigate to Z-Force folder, and type the following in the command line: 
->ant deploy
+* Navigate to Z-Force folder, and type the following in the command line: 
+
+    >ant deploy
 
 This will deploy all sample code packages to your Salesforce.com organization.
 
@@ -88,12 +89,12 @@ Optionally, you can deploy one or more sample code packages individually into on
   * Navigate to Z-Force/<Sample Code Package> folder, for instance, Z-Force/InvoiceOwnerTransfer
   * Open build.properties file, and specify the login credentials for your Salesforce.com organization (for this specific sample code package)
 
-    sf.username=
-    sf.password= 
+    >sf.username=    
+    >sf.password= 
     
 
 * In command-line, type:
 
-    ant deploy
+    >ant deploy
 
 This will deploy the specific sample code package into your Salesforce.com organization.
