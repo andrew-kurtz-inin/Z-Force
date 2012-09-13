@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Zuora ZCommerce by zuora</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Zuora ZCommerce</h1>
+        <p>Z-Force Sample Code Repository</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/zuora/Z-Force" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/zuora/Z-Force/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/zuora/Z-Force/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h2><strong>Zuora Z-Force Sample Code Suite</strong></h2>
+
+<h2><strong>Introduction</strong></h2>
+
+<p>The Z-Force Sample Code Suite provides executable code examples in unmanaged Force.com packages. </p>
+
+<p>Zuora Support does not troubleshoot content from GitHub. The sample code is as an example of code 
+that has worked for previous implementations and was created by both Zuora and non-Zuora authors. 
+Please send any GitHub-related comments and feedback to Dev-Support@zuora.</p>
+
+<h2><strong>Pre-Requisites</strong></h2>
+
+<ul>
+<li>
+<p>The Z-Force Sample Code Suite includes a set of unmanaged packages that depend on the following Z-Force managed packages:</p>
+
+<ul>
+<li>Z-Force 360 Version 2.2 or above</li>
+<li>Z-Force Quotes Version 5.3 or above</li>
+</ul>
+</li>
+<li>
+<p>If you do not have Force.com Migration Tool already installed and you would like to use the Force.com Migration Tool to deploy the sample code to your Salesforce.com organization, please follow the instructions below: </p>
+
+<ul>
+<li>Visit <a href="http://java.sun.com/javase/downloads/index.jsp">http://java.sun.com/javase/downloads/index.jsp</a> and install Java JDK, Version 6.1 or greater on the deployment machine.</li>
+<li>Visit <a href="http://ant.apache.org/">http://ant.apache.org/</a> and install Apache Ant, Version 1.6 or greater on the deployment machine.</li>
+<li>Set up the environment variables (such as ANT_HOME, JAVA_HOME, and PATH) as specified in the Ant Installation Guide at <a href="http://ant.apache.org/manual/install.html">http://ant.apache.org/manual/install.html</a>.</li>
+<li>Log in to Salesforce on your deployment machine. Click Your Name | Setup | Develop | Tools, then click Force.com Migration Tool.</li>
+<li>Unzip the downloaded file to the directory of your choice. The Zip file contains a Jar file containing the ant tasks: ant-salesforce.jar</li>
+<li>Copy the ant-salesforce.jar file from the unzipped file into the ant lib directly.  The ant lib directly is located in the root folder of your Ant installation. </li>
+</ul>
+</li>
+</ul><h2><strong>Installation Instructions</strong></h2>
+
+<ul>
+<li>
+<p>Open ZForce/build.properties, and specify the login credentials for your Salesforce.com organization: </p>
+
+<blockquote>
+<p>sf.username=</p>
+
+<p>sf.password= </p>
+</blockquote>
+</li>
+</ul><p>Please note that the password should be your login password concatenated with the security token.</p>
+
+<ul>
+<li>
+<p>Navigate to Z-Force folder, and type the following in the command line: </p>
+
+<blockquote>
+<p>ant deploy</p>
+</blockquote>
+</li>
+</ul><p>This will deploy all sample code packages to your Salesforce.com organization.</p>
+
+<p>Optionally, you can deploy one or more sample code packages individually into one or more Salesforce.com organizations. </p>
+
+<ul>
+<li>Navigate to Z-Force/ folder, for instance, Z-Force/InvoiceOwnerTransfer</li>
+<li>
+<p>Open build.properties file, and specify the login credentials for your Salesforce.com organization (for this specific sample code package)</p>
+
+<blockquote>
+<p>sf.username=<br>
+sf.password= </p>
+</blockquote>
+
+<ul>
+<li>In command-line, type:</li>
+</ul>
+<blockquote>
+<p>ant deploy</p>
+</blockquote>
+</li>
+</ul><p>This will deploy the specific sample code package into your Salesforce.com organization.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/zuora">zuora</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
