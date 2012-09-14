@@ -39,11 +39,9 @@
         <ul></ul>
       </nav>
       <section>
-        <h2><strong>Zuora Z-Force Sample Code Suite</strong></h2>
+        <h2><strong>Introduction</strong></h2>
 
-<h2><strong>Introduction</strong></h2>
-
-<p>The Z-Force Sample Code Suite provides executable code examples in unmanaged Force.com packages. </p>
+<p>The <strong>Z-Force Sample Code Suite</strong> provides executable code examples in unmanaged Force.com packages. </p>
 
 <p>Zuora Support does not troubleshoot content from GitHub. The sample code is as an example of code 
 that has worked for previous implementations and was created by both Zuora and non-Zuora authors. 
@@ -51,51 +49,53 @@ Please send any GitHub-related comments and feedback to Dev-Support@zuora.</p>
 
 <h2><strong>Pre-Requisites</strong></h2>
 
-<p>The Z-Force Sample Code Suite includes a set of unmanaged packages that depend on the following Z-Force managed packages:</p>
+<p>The <strong>Z-Force Sample Code Suite</strong> contains a set of unmanaged packages that depend on the following Z-Force managed packages:</p>
 
 <ul>
-<li>Z-Force 360 Version 2.2 or above</li>
-<li>Z-Force Quotes Version 5.3 or above</li>
-</ul><p><strong>Order Builder Sample Code</strong>
-This Z-Force Sample Code package provides a reference implementation of creating amendment using Z-Force Order Builder Apex Components.</p>
+<li>
+<em>Z-Force 360 Version 2.2</em> or above</li>
+<li>
+<em>Z-Force Quotes Version 5.3</em> or above</li>
+</ul><h2><strong>Amendment Quote Validator</strong></h2>
+
+<p>This package provides a reference implementation to validate whether the Amendment Quote is amending on a subscription that has been renewed at Zuora. If the subscription is already renewed it will provide an option to the end user to create an amendment on the latest version of the subscription.</p>
 
 <h2><strong>Custom Product Selector</strong></h2>
 
-<p>Custom Product Selector sample code package provides a reference implementation of a custom Product Selector with filtering and searching capabilities, built using Global Methods and Components.</p>
+<p>This sample code package provides a reference implementation of a custom Product Selector with filtering and searching capabilities, built using Zuora Development Kit.</p>
 
-<h2><strong>Z-Checkout Integration</strong></h2>
+<h2><strong>Order Builder Sample Code Suite</strong></h2>
 
-<p>This sample implementation of Z-Checkout pages in Salesforce.com contains the following 3 scenarios: 
-(1) Create a payment method from a Billing Account detail page 
-(2) Create a payment method from Quote detail page that is associated with the quote that has been sent to Z-Billing. 
-(3) Create a subscription from a particular rate plan through Z-Checkout page</p>
-
-<p>The newly created payment method will be set as the default payment method of the associated billing account, and "Auto-Pay" will be enabled for the associated billing account. </p>
-
-<p>The default payment method and the Auto-Pay information will be available on the Billing Account record in SFDC after the next SFDC Sync is run.</p>
+<p>The Order Builder Sample Code Suite contains a series of sample code packages that provide reference implementations of using Z-Force Order Builder Component Library.</p>
 
 <h2><strong>Product Bundling</strong></h2>
 
-<p>This Z-Force Sample Code package provides a reference implementation that allows product bundling capability.  </p>
+<p>This package provides a reference implementation that allows product bundling capability.  </p>
 
 <p>In this sample application, a Product Bundle contains one or more Product Rate Plans from different ZProducts. An end-user can add a product bundle to a quote.  Upon saving, all the rate plans associated with the product bundle will be added to the quote together.</p>
 
 <h2><strong>Quote Split</strong></h2>
 
-<p>This Z-Force Sample Code package provides a reference implementation that split single Quote(MasterQuote) into two Quotes(SubQuote) and sending to Z-Billing.</p>
-
-<h2><strong>Subscription Charges Updater</strong></h2>
-
-<p>This Z-Force Sample Code package provides a reference implementation that allows batch-update of subscription charges, and the term conditions of their related subscriptions.</p>
-
-<h2><strong>Amendment Quote Validator</strong></h2>
-
-<p>This Z-Force Sample Code package provides a reference implementation to validate whether the Amendment Quote is amending on a subscription that has been renewed at Zuora. If the subscription is already renewed it will provide an option to the end user to create an amendment on the latest version of the subscription.</p>
+<p>This package provides a reference implementation that sends a quote to Zuora to create 2 subscriptions.</p>
 
 <h2>
 <strong>Quote-to-Payment Processing Custom Trigger</strong> </h2>
 
-<p>This Z-Force Sample Code Package provides a reference implementation of the BeforeInsert Trigger on "Quote Processing Data" object, which is part of Z-Force Quotes feature "Mass Quote-to-Payment Processing".</p>
+<p>This package provides a reference implementation of the BeforeInsert Trigger on "Quote Processing Data" object, which is part of Z-Force Quotes feature "Mass Quote-to-Payment Processing".</p>
+
+<h2><strong>Subscription Charges Updater</strong></h2>
+
+<p>This package provides a reference implementation that allows batch-update of a set of subscription charges, as well as the term conditions of their related subscriptions.</p>
+
+<h2><strong>Z-Checkout Integration</strong></h2>
+
+<p>This sample implementation of integrating Z-Checkout pages with Force.com contains reference implementations of the following 3 functionalities: </p>
+
+<ul>
+<li>Ability to create a payment method from a Billing Account detail page </li>
+<li>Ability to create a payment method from Quote detail page that is associated with the quote that has been sent to Z-Billing. </li>
+<li>Ability to create a subscription from a particular rate plan through Z-Checkout page</li>
+</ul>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/zuora">zuora</a></p>
@@ -103,6 +103,16 @@ This Z-Force Sample Code package provides a reference implementation of creating
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("ZForce Sample Code");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
