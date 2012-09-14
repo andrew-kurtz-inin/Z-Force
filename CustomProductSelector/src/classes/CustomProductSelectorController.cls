@@ -53,24 +53,15 @@ public with sharing class CustomProductSelectorController {
   private String productFilterFragment = ' ';
   private String rateplanFilterFragment = ' ';
 
-  private void loadCustomFilterSegments() {
-    Custom_Product_Filter__c filterSegments = Custom_Product_Filter__c.getValues('filter');
-    if (filterSegments != null) {
-      productFilterFragment = filterSegments.get('Product_Filter_Fragment__c') == null ? '' : ' AND ' + (String) filterSegments.get('Product_Filter_Fragment__c');
-      rateplanFilterFragment = filterSegments.get('RatePlan_Filter_Fragment__c') == null ? '' : ' AND ' + (String) filterSegments.get('RatePlan_Filter_Fragment__c');
-    }
-    System.debug('rateplanFilterFragment=' + rateplanFilterFragment);
-  }
+  private String quoteId;
 
   public CustomProductSelectorController(ApexPages.StandardController controller) {
     initFailed = true;
-    final String quoteId = controller.getId();
+    quoteId = controller.getId();
     if (null == quoteId || '' == quoteId) {
       appendErrorMessage('Need to specify the id of quote.');
       return;
     }
-
-    loadCustomFilterSegments();
 
     List < zqu__Quote__c > quotelist = [SELECT Id, Name, zqu__Opportunity__r.Name, zqu__Opportunity__r.Account.Name, zqu__Opportunity__r.Account.Id, zqu__RecordReadOnly__c, zqu__Currency__c, zqu__Status__c, zqu__StartDate__c, RecordTypeId
     FROM zqu__Quote__c WHERE Id = : quoteId LIMIT 1];
@@ -303,6 +294,25 @@ public with sharing class CustomProductSelectorController {
 
   public PageReference navigateBack() {
     return new PageReference('/' + this.quote.Id);
+  }
+
+  /**
+   *Hint:
+   *	Global Method: sendToZBilling (quoteID, selectedZBillingAccountID, overrideZContacts, quoteFields, chargeFields):
+   *	selectedZBillingAccountID = New: Create a new customer and a new subscription in Z-Billing corresponding to the quote in Salesforce. Use this only when the quote subscription type is "New Subscription."
+   *	selectedZBillingAccountID = ID of the Customer in Z-Billing: Create a new subscription under the specified customer. Use this only when the quote subscription type is "New Subscription."
+   *	selectedZBillingAccountID: This value is ignored for amendment and renewal scenarios.
+   */
+  public PageReference doSend() {
+    try {
+      String billingAccountId = ApexPages.currentPage().getParameters().get('billingAcountId');
+      if (billingAccountId == null) zqu.zQuoteUtil.sendToZBilling(quoteId, 'New', false, null, null);
+      else zqu.zQuoteUtil.sendToZBilling(quoteId, billingAccountId, false, null, null);
+    } catch (Exception e) {
+      ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, e.getMessage()));
+    }
+
+    return null;
   }
 
   public PageReference cancel() {

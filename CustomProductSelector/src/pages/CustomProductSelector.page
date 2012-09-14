@@ -173,7 +173,10 @@
 								rendered="{!! (editMode||selectNewProductViewMode) }"
 								status="selectNewProductStatus" />
 							<apex:commandButton value="Done" action="{!navigateBack}"
+							rendered="{!! (editMode||selectNewProductViewMode) }"
 								status="selectNewProductStatus" />
+							<apex:commandButton value="Send To Z-Billing" action="{!doSend}" 
+							rendered="{!! (editMode||selectNewProductViewMode) }"/>
 						</apex:outputPanel>
 					</apex:facet>
 				</apex:actionStatus>
