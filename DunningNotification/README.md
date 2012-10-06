@@ -1,4 +1,3 @@
-
       Copyright (c) 2012 Zuora, Inc.
     
       Permission is hereby granted, free of charge, to any person obtaining a copy of 
@@ -32,7 +31,7 @@ Introduction
 
 This Z-Force Sample Code package provides a reference implementation that allows Invoice Dunning Email Notifications capability.
 
-A Dunning Notification Service Apex job contained in this package can be scheduled to do the following: 
+A Dunning Notification Service Apex job in this package can be scheduled to do the following: 
 
    * Look through all invoices having balance > 0 and are past due, grouped by billing account ID
    * Calculate how many days the invoice has been past due, and group them into different dunning phases
