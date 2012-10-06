@@ -148,6 +148,14 @@ Getting Started
 ----
 * Grant permission set "Dunning Notification Permission Set" to users who need to define dunning notification properties, phases and schedule dunning notification jobs.
 * Navigate to Setup --> App Setup --> Develop --> Static Resources, and customize email templates "DunningEmailTemplateA", "DunningEmailTemplateB" and "DunningEmailTemplateC".
+* Please **do not** change the tokens in the email templates, including
+
+    >BillToContactName
+    
+    >MergeTablePastDueInvoice
+    
+    >TodayDate
+    
 * Navigate to tab "Dunning Notification Definition"
 * Specify Dunning Notification Definition properties
 * Create one or more Dunning Notification Phases
