@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zuora Invoice Dunning Email Notifications</fullName>
+    <description>This package provides a reference implementation of Invoice Dunning Email Notifications.</description>
+    <types>
+        <members>DunningEmailController</members>
+        <members>DunningNotificationJob</members>
+        <members>DunningNotificationService</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>DunningPhaseDef__c.Days__c</members>
+        <members>DunningPhaseDef__c.DunningDef__c</members>
+        <members>DunningPhaseDef__c.Email_Template_Name__c</members>
+        <members>DunningPhaseDef__c.Phase__c</members>
+        <members>DunningPhaseDef__c.Subject__c</members>
+        <members>Dunning_Notification_Definition__c.CC_Address__c</members>
+        <members>Dunning_Notification_Definition__c.CRON_Expression__c</members>
+        <members>Dunning_Notification_Definition__c.Default_Email_Template_Name__c</members>
+        <members>Dunning_Notification_Definition__c.Default_Subject__c</members>
+        <members>Dunning_Notification_Definition__c.From_Name__c</members>
+        <members>Dunning_Notification_Definition__c.Reply_to_Address__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>DunningPhaseDef__c</members>
+        <members>Dunning_Notification_Definition__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Dunning_Notification_Definition__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>DunningPhaseDef__c-Dunning Notification Phase Layout</members>
+        <members>Dunning_Notification_Definition__c-Dunning Notification Definition Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Dunning_Notification_Definition__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Dunning_Notification_Permission_Set</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>DunningEmailTemplateA</members>
+        <members>DunningEmailTemplateB</members>
+        <members>DunningEmailTemplateC</members>
+        <name>StaticResource</name>
+    </types>
+    <version>22.0</version>
+</Package>
