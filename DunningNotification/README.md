@@ -159,8 +159,5 @@ Getting Started
 * Navigate to tab "Dunning Notification Definition"
 * Specify Dunning Notification Definition properties
 * Create one or more Dunning Notification Phases
-* Run the following Apex script to schedule the Dunning Notification Service job.  The job will be scheduled according to the CRON Expression specified at the Dunning Notification Definition object. 
-
->     DunningNotificationService service = new DunningNotificationService();
->     service.scheduleJob();
+* Click "Schedule Dunning Job" button to schedule the Dunning Email Notification Job. 
 
