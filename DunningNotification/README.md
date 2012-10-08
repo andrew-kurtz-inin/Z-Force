@@ -50,8 +50,10 @@ Prerequisites
 -------------
 
 1. This sample code package is an unmanaged package that depends on the following Z-Force managed packages: 
-Z-Force 360 Version 2.3
-Z-Force Quotes Version 5.5
+
+>Z-Force 360 Version 2.3
+
+>Z-Force Quotes Version 5.5
 
 2. If you do not have Force.com Migration Tool already installed, please follow the instructions below: 
 
