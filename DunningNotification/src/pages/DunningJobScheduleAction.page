@@ -1,0 +1,7 @@
+<apex:page standardController="Dunning_Notification_Definition__c"
+	extensions="DunningJobScheduler" action="{!schedule}">
+	<apex:pageMessages />
+	<apex:form >
+		<apex:commandButton value="Back" action="{!navigateBack}" />
+	</apex:form>
+</apex:page>

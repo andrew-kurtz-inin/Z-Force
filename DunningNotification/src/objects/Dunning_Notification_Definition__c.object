@@ -118,4 +118,15 @@
     <pluralLabel>Dunning Notification Definition</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Schedule_Dunning_Job</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Schedule Dunning Job</masterLabel>
+        <openType>sidebar</openType>
+        <page>DunningJobScheduleAction</page>
+        <protected>false</protected>
+    </webLinks>
 </CustomObject>

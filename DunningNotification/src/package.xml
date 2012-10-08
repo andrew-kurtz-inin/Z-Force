@@ -4,9 +4,14 @@
     <description>This package provides a reference implementation of Invoice Dunning Email Notifications.</description>
     <types>
         <members>DunningEmailController</members>
+        <members>DunningJobScheduler</members>
         <members>DunningNotificationJob</members>
         <members>DunningNotificationService</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>DunningJobScheduleAction</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>DunningPhaseDef__c.Days__c</members>
@@ -49,6 +54,10 @@
         <members>DunningEmailTemplateB</members>
         <members>DunningEmailTemplateC</members>
         <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Dunning_Notification_Definition__c.Schedule_Dunning_Job</members>
+        <name>WebLink</name>
     </types>
     <version>22.0</version>
 </Package>
