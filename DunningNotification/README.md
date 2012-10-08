@@ -65,7 +65,7 @@ Z-Force Quotes Version 5.5
 Installation Instructions
 -------------------------
 Option 1: Install it as an unmanaged package by clicking on the following installation URL
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000AJlD
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000AJlI
 
 Option 2: Install and deploy the source code using Force.com Migration Toolkit:
 
