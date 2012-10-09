@@ -125,9 +125,13 @@ This package includes the following custom tabs:
 
 This package includes the following permission set: 
 
- *Dunning Notification Permission Set*
+ *Dunning Notification Permission Set For Salesforce Platform License*
  
-  Grant this permission set to users who need to define dunning notification properties, phases and schedule dunning notification jobs.
+  Grant this permission set to users with Salesforce Platform license who need to define dunning notification properties, phases and schedule dunning notification jobs.
+
+*Dunning Notification Permission Set For Salesforce License*
+ 
+  Grant this permission set to users with Salesforce license who need to define dunning notification properties, phases and schedule dunning notification jobs.
 
 **4. Static Resources**
 
@@ -148,7 +152,7 @@ You may certainly define more than 3 dunning phases.
 
 Getting Started
 ----
-* Grant permission set "Dunning Notification Permission Set" to users who need to define dunning notification properties, phases and schedule dunning notification jobs.
+* Grant permission set "Dunning Notification Permission Set for Salesforce Platform License" or "Dunning Notification Permission Set for Salesforce License" to users who need to define dunning notification properties, phases and schedule dunning notification jobs.
 * Navigate to Setup --> App Setup --> Develop --> Static Resources, and customize email templates "DunningEmailTemplateA", "DunningEmailTemplateB" and "DunningEmailTemplateC".
 * Please **do not** change the tokens in the email templates, including
 
