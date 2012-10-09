@@ -47,6 +47,7 @@
     </types>
     <types>
         <members>Dunning_Notification_Permission_Set</members>
+        <members>Dunning_Notification_Permission_Set_for_Salesforce_License</members>
         <name>PermissionSet</name>
     </types>
     <types>

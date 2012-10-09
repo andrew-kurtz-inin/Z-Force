@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Dunning Notification Permission Set For Salesforce Platform License</label>
-    <userLicense>Salesforce Platform</userLicense>
+    <label>Dunning Notification Permission Set for Salesforce License</label>
+    <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>false</enabled>
         <name>ActivateContract</name>
