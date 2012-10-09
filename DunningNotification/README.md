@@ -99,7 +99,7 @@ Use this custom object to define the dunning notification properties, including
        Default Email Subject
        CC Email Address
        Reply-to Email Address
-       CRON Expression of the dunning notification jobe.g. '0 00 19 * *   ?' - Run everyday at 7pm.
+       CRON Expression of the dunning notification jobe.g. '0 00 19 * * ?' - Run everyday at 7pm.
        Default Email Template Name
 
   You may create only one Dunning Notification Definition object.
