@@ -21,12 +21,20 @@ public with sharing virtual class ZCheckoutBaseController {
   private String apiSecurityKey;
   private String appUrl;
   private String tenantId;
-
-  public PageReference pageRef {
-    get;
-    set;
+  
+  protected PageReference pageRef; 
+  
+  public virtual PageReference getPageRef() {
+  	if (pageRef == null) {
+  		this.pageRef = Page.CheckoutSample;
+  	}
+  	return this.pageRef; 
   }
-
+  
+  public void setPageRef(PageReference pageRef) {
+  	this.pageRef = pageRef;
+  }
+  
   public void onload() {
     try {
       validateConfiguration();
@@ -123,8 +131,6 @@ public with sharing virtual class ZCheckoutBaseController {
     errorMessage = '';
     errorCode = '';
     
-    this.pageRef = Page.CheckoutSample;
-
     PageReference curPage = System.currentPageReference();
 
     errorMessage = curPage.getParameters().get('errorMessage');
@@ -159,7 +165,7 @@ public with sharing virtual class ZCheckoutBaseController {
         validationErrors.add(ErrorCodeMapping.ERROR_FIELD_MAPPING.get(errorField) + ': ' + ErrorCodeMapping.VALUES.get(errorFieldValue));
       }
     }
-    if (validationErrors.size() > 0) {
+    if (validationErrors.size() > 0) { 
       validationErrors.sort();
       for (String validationError: validationErrors) {
         ApexPages.addMessage(New ApexPages.Message(ApexPages.Severity.ERROR, validationError));

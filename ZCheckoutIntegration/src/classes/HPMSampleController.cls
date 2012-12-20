@@ -3,6 +3,13 @@ public with sharing class HPMSampleController extends ZCheckoutBaseController {
 	public override String getCustomSettingName() {
 		return 'Zuora HPM Setting'; 
 	}
+	
+	public override PageReference getPageRef() {
+		if ( this.pageRef == null ) {
+			setPageRef(Page.HPMSample);
+		} 
+		return this.pageRef;
+	}
 
   /**
    * Specify extra HPM parameters that can be used to (1) Preload field values (2) Override default HPM properties.  Please see 
@@ -16,12 +23,12 @@ public with sharing class HPMSampleController extends ZCheckoutBaseController {
       List < zqu__Quote__c > quotes = [SELECT zqu__ZuoraAccountId__c from zqu__Quote__c WHERE id = : objectId];
       if (quotes != null && quotes.size() > 0) {
         billingAccountZuoraId = quotes.get(0).zqu__ZuoraAccountId__c;
-        pageRef = Page.PaymentMethodCreation;
+        setPageRef(Page.PaymentMethodCreation);
       } else {
         List < Zuora__CustomerAccount__c > billingAccounts = [SELECT Zuora__Zuora_Id__c FROM Zuora__CustomerAccount__c WHERE id = : objectId];
         if (billingAccounts != null && billingAccounts.size() > 0) {
           billingAccountZuoraId = billingAccounts.get(0).Zuora__Zuora_Id__c;
-          pageRef = Page.PaymentMethodCreationBillingAccount;
+          setPageRef(Page.PaymentMethodCreationBillingAccount);
         }
       }
     }
