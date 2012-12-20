@@ -49,7 +49,7 @@ INSTALLATION INSTRUCTIONS
 
 1. Install this sample code package using the following Force.com Installation URL (Version 1.1): 
 
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000AGnp
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000AGnu
 
 This will install sample code unmanaged package into your Salesforce.com organization.
 
@@ -71,5 +71,7 @@ http://knowledgecenter.zuora.com/C_Zuora_User_Guides/B_Commerce/Z-Payments_Page_
 
 4. Follow the instructions on the following link to configure Z-Payment settings in Salesforce.com organization: 
 http://knowledgecenter.zuora.com/C_Zuora_User_Guides/B_Commerce/Z-Payments_Page_User_Guide/Implementing_Z-Payments_Page_with_Salesforce.com/C_Configure_the_Z-Payments_Page_Settings_in_Salesforce.com
+
+5. Navigate to Z-360 "Connection Setup" tab, and setup Zuora API connection there. 
 
 For more information on Salesforce.com and Z-Checkout integration please refer to the Z-Payment Pages chapter on Zuora knowledge center.
