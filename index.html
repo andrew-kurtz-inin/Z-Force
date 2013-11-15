@@ -1,115 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Z-Force Sample Code Repository by zuora</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <title>Zuora for Salesforce Sample Code Repository by zuora</title>
   </head>
+
   <body>
+    <header>
+      <div class="inner">
+        <h1>Zuora for Salesforce Sample Code Repository</h1>
+        <h2>Zuora Z-Commerce</h2>
+        <a href="https://github.com/zuora/Z-Force" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-      <header>
-        <h1>Z-Force Sample Code Repository</h1>
-        <p>Zuora ZCommerce</p>
-      </header>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a><strong>Introduction</strong>
+</h2>
 
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/zuora/Z-Force" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/zuora/Z-Force/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/zuora/Z-Force/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h2><strong>Introduction</strong></h2>
-
-<p>The <strong>Z-Force Sample Code Suite</strong> provides executable code examples in unmanaged Force.com packages. </p>
+<p>The <strong>Zuora for Salesforce Sample Code Suite</strong> provides executable code examples in unmanaged Force.com packages. </p>
 
 <p>Zuora Support does not troubleshoot content from GitHub. The sample code is as an example of code 
 that has worked for previous implementations and was created by both Zuora and non-Zuora authors. 
 Please send any GitHub-related comments and feedback to Dev-Support@zuora.</p>
 
-<h2><strong>Prerequisites</strong></h2>
+<h2>
+<a name="prerequisites" class="anchor" href="#prerequisites"><span class="octicon octicon-link"></span></a><strong>Prerequisites</strong>
+</h2>
 
-<p>The <strong>Z-Force Sample Code Suite</strong> contains a set of unmanaged packages that depend on the following Z-Force managed packages:</p>
+<p>The <strong>Zuora for Salesforce Sample Code Suite</strong> contains a set of unmanaged packages that depend on the following Zuora for Salesforce managed packages:</p>
 
 <ul>
 <li>
-<em>Z-Force 360 Version 2.2</em> or above</li>
+<em>Zuora for Salesforce 360 Version 2.2</em> or above</li>
 <li>
-<em>Z-Force Quotes Version 5.3</em> or above</li>
+<em>Zuora for Salesforce Quotes Version 5.3</em> or above</li>
 </ul><h2>
-<strong>Advanced Product Configuration</strong> <code>Coming Soon</code>
+<a name="zuora-for-salesforce-zdk-sample-code---titanium-edition" class="anchor" href="#zuora-for-salesforce-zdk-sample-code---titanium-edition"><span class="octicon octicon-link"></span></a><strong>Zuora for Salesforce ZDK Sample Code - Titanium Edition</strong>
 </h2>
 
-<p>This package provides a reference implementation of advanced product configuration capabilities, built using Zuora Development Kit. </p>
+<p>This Package contains a set of reference implementations of a set of ZDK components, built using Titanium release.  It also includes a custom product selector with filtering capabilities built using the new SelectProduct component. </p>
 
-<h2><strong>Amendment Quote Validator</strong></h2>
+<h2>
+<a name="amendment-quote-validator" class="anchor" href="#amendment-quote-validator"><span class="octicon octicon-link"></span></a><strong>Amendment Quote Validator</strong>
+</h2>
 
 <p>This package provides a reference implementation to validate whether the Amendment Quote is amending on a subscription that has been renewed at Zuora. If the subscription is already renewed it will provide an option to the end user to create an amendment on the latest version of the subscription.</p>
 
 <h2>
-<strong>Contact Center App</strong> <code>Coming Soon</code>
+<a name="custom-product-selector" class="anchor" href="#custom-product-selector"><span class="octicon octicon-link"></span></a><strong>Custom Product Selector</strong>
 </h2>
-
-<p>This package provides a reference implementation of a Contact Center App, built using Zuora Development Kit.</p>
-
-<h2><strong>Custom Product Selector</strong></h2>
 
 <p>This sample code package provides a reference implementation of a custom Product Selector with filtering and searching capabilities, built using Zuora Development Kit.</p>
 
-<h2><strong>Dunning Notification Service</strong></h2>
+<h2>
+<a name="dunning-notification-service" class="anchor" href="#dunning-notification-service"><span class="octicon octicon-link"></span></a><strong>Dunning Notification Service</strong>
+</h2>
 
 <p>This sample code package provides a reference implementation that allows Invoice Dunning Email Notifications capability. An admin user can configure Dunning Email Notification properties and Dunning Phases (phase number, trigger after number of days past-due, email templates) on UI, and schedule a Dunning Notification Service job that sends phased notification emails when the invoices are past-due.  </p>
 
-<h2><strong>Order Builder Sample Code Suite</strong></h2>
+<h2>
+<a name="order-builder-sample-code-suite" class="anchor" href="#order-builder-sample-code-suite"><span class="octicon octicon-link"></span></a><strong>Order Builder Sample Code Suite</strong>
+</h2>
 
-<p>The Order Builder Sample Code Suite contains a series of sample code packages that provide reference implementations using Z-Force Order Builder Component Library.</p>
+<p>The Order Builder Sample Code Suite contains a series of sample code packages that provide reference implementations using Zuora for Salesforce Order Builder Component Library.</p>
 
 <h2>
-<strong>Order Orchestration</strong> <code>Coming Soon</code>
+<a name="order-orchestration-coming-soon" class="anchor" href="#order-orchestration-coming-soon"><span class="octicon octicon-link"></span></a><strong>Order Orchestration</strong> <code>Coming Soon</code>
 </h2>
 
 <p>This package provides a reference implementation of order orchestration capabilities, built using Zuora Development Kit.</p>
 
-<h2><strong>Product Bundling</strong></h2>
+<h2>
+<a name="product-bundling" class="anchor" href="#product-bundling"><span class="octicon octicon-link"></span></a><strong>Product Bundling</strong>
+</h2>
 
 <p>This package provides a reference implementation that allows product bundling capability.  </p>
 
 <p>In this sample application, a Product Bundle contains one or more Product Rate Plans from different ZProducts. An end-user can add a product bundle to a quote.  Upon saving, all the rate plans associated with the product bundle will be added to the quote together.</p>
 
-<h2><strong>Quote Split</strong></h2>
+<h2>
+<a name="quote-split" class="anchor" href="#quote-split"><span class="octicon octicon-link"></span></a><strong>Quote Split</strong>
+</h2>
 
 <p>This package provides a reference implementation that sends a quote to Zuora to create 2 subscriptions.</p>
 
 <h2>
-<strong>Quote-to-Payment Processing Custom Trigger</strong> </h2>
+<a name="quote-to-payment-processing-custom-trigger-" class="anchor" href="#quote-to-payment-processing-custom-trigger-"><span class="octicon octicon-link"></span></a><strong>Quote-to-Payment Processing Custom Trigger</strong> </h2>
 
-<p>This package provides a reference implementation of the BeforeInsert Trigger on "Quote Processing Data" object, which is part of Z-Force Quotes feature "Mass Quote-to-Payment Processing".</p>
+<p>This package provides a reference implementation of the BeforeInsert Trigger on "Quote Processing Data" object, which is part of Zuora for Salesforce Quotes feature "Mass Quote-to-Payment Processing".</p>
 
-<h2><strong>Subscription Charges Updater</strong></h2>
+<h2>
+<a name="subscription-charges-updater" class="anchor" href="#subscription-charges-updater"><span class="octicon octicon-link"></span></a><strong>Subscription Charges Updater</strong>
+</h2>
 
 <p>This package provides a reference implementation that allows batch-update of a set of subscription charges, as well as the term conditions of their related subscriptions.</p>
 
-<h2><strong>Z-Checkout Integration</strong></h2>
+<h2>
+<a name="z-checkout-integration" class="anchor" href="#z-checkout-integration"><span class="octicon octicon-link"></span></a><strong>Z-Checkout Integration</strong>
+</h2>
 
 <p>This sample implementation of integrating Z-Checkout pages with Force.com contains reference implementations of the following 3 functionalities: </p>
 
@@ -118,14 +121,26 @@ Please send any GitHub-related comments and feedback to Dev-Support@zuora.</p>
 <li>Ability to create a payment method from Quote detail page that is associated with the quote that has been sent to Z-Billing. </li>
 <li>Ability to create a subscription from a particular rate plan through Z-Checkout page</li>
 </ul>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/zuora">zuora</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
-      </footer>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/zuora/Z-Force/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/zuora/Z-Force/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/zuora/Z-Force"></a> is maintained by <a href="https://github.com/zuora">zuora</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
