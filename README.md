@@ -1,4 +1,4 @@
-> Copyright (c) 2012 Zuora, Inc.
+> Copyright (c) 2013 Zuora, Inc.
 > 
 > Permission is hereby granted, free of
 > charge, to any person obtaining a copy
@@ -54,9 +54,9 @@ Please send any GitHub-related comments and feedback to Dev-Support@zuora.
 **Pre-Requisites**
 --
 
-* The Z-Force Sample Code Suite includes a set of unmanaged packages that depend on the following Z-Force managed packages:
-  * Z-Force 360 Version 2.2 or above
-  * Z-Force Quotes Version 5.3 or above
+* The Zuora for Salesforce Sample Code Suite includes a set of unmanaged packages that depend on the following Z-Force managed packages:
+  * Zuora for Salesforce 360 Version 2.2 or above
+  * Zuora for Salesforce Quotes Version 5.3 or above
 
 * If you do not have Force.com Migration Tool already installed and you would like to use the Force.com Migration Tool to deploy the sample code to your Salesforce.com organization, please follow the instructions below: 
   * Visit http://java.sun.com/javase/downloads/index.jsp and install Java JDK, Version 6.1 or greater on the deployment machine.
