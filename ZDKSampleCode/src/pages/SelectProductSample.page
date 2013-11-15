@@ -1,0 +1,5 @@
+<apex:page sidebar="false" controller="SelectProductSampleController">
+    <apex:form >
+        <zqu:SelectProduct options="{!theOptions}"/>
+    </apex:form>
+</apex:page>

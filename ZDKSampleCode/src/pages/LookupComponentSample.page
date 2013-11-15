@@ -1,0 +1,12 @@
+<apex:page controller="LookupComponentSamplePageController">
+    <apex:form >
+      <apex:pageBlock title="Lookup Component Sample">
+        <apex:pageblockSection >
+          <apex:pageBlockSectionitem >
+              <apex:outputLabel >Contact(LookupComponent)</apex:outputLabel>
+              <zqu:LookupComponent options="{!optionsForLookup}"></zqu:LookupComponent>
+          </apex:pageblockSectionItem>
+        </apex:pageblockSection>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

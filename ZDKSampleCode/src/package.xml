@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zuora for Salesforce ZDK Sample Code</fullName>
+    <description>This package includes sample codes for all NextGen components</description>
+    <types>
+        <members>CustomProductFilter</members>
+        <members>CustomProductSelectorController</members>
+        <members>CustomProductSelectorControllerTest</members>
+        <members>CustomQuotePreviewSample</members>
+        <members>CustomQuotePreviewSampleTest</members>
+        <members>CustomQuoteWizardStep</members>
+        <members>CustomQuoteWizardStepTest</members>
+        <members>CustomTiersSample</members>
+        <members>CustomTiersSampleTest</members>
+        <members>LookupComponentSampleController</members>
+        <members>LookupComponentSamplePageController</members>
+        <members>LookupComponentSamplePageControllerTest</members>
+        <members>PropertyComponentSampleController</members>
+        <members>PropertyComponentSampleControllerTest</members>
+        <members>SelectProductSampleController</members>
+        <members>SelectProductSampleControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CustomQuotePreviewSample</members>
+        <members>CustomQuoteWizardStep</members>
+        <members>CustomSelectProducts</members>
+        <members>GlobalMethodForCustomTiersSupportSample</members>
+        <members>LookupComponentSample</members>
+        <members>PropertyComponentSample</members>
+        <members>SelectProductSample</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>zqu__ProductRatePlan__c.BillingFrequency__c</members>
+        <members>zqu__QuoteCharge__c.Category__c</members>
+        <members>zqu__QuoteCharge__c.Region__c</members>
+        <members>zqu__QuoteRatePlanCharge__c.Category__c</members>
+        <members>zqu__QuoteRatePlanCharge__c.Region__c</members>
+        <members>zqu__Quote__c.BillingFrequency__c</members>
+        <members>zqu__Quote__c.Custom_Picklist_Field__c</members>
+        <members>zqu__Quote__c.Custom_Text_Field__c</members>
+        <members>zqu__Quote__c.MarketSegment__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>zqu__Quote__c.SelectProductsWithFilter</members>
+        <name>WebLink</name>
+    </types>
+    <version>27.0</version>
+</Package>

@@ -1,0 +1,54 @@
+<apex:page standardController="zqu__Quote__c" extensions="CustomQuoteWizardStep" showHeader="true" sidebar="true">
+
+  <!-- Center the navigation button bar -->
+  <style>
+    .quoteWizardButtonBar {
+      text-align: center;
+    }
+  </style>
+
+  <apex:composition template="zqu__QuoteWizardTemplate">
+
+    <apex:define name="PageBody">
+
+      <!-- Action functions to call navigation methods of BaseQuoteWizardController (These action functions MUST be contained within the apex:define tags to work)-->
+      <apex:actionFunction action="{!navigateNext}" name="onNavigateNext" />
+      <apex:actionFunction action="{!navigateBack}" name="onNavigateBack" />
+      <apex:actionFunction action="{!cancel}" name="onCancel" immediate="true" />
+
+      <!-- Make sure quote standard controller has access to opportunity Id -->
+      <apex:outputField value="{!zqu__Quote__c.zqu__Opportunity__c}" rendered="false" />
+
+      <br/>
+
+      <table>
+        <tr>
+          <td>
+            <h2>Select a business channel:</h2> 
+          </td>
+          <td>
+            <apex:selectList value="{!selectedBusinessChannel}" size="2">
+              <apex:selectOptions value="{!businessChannelOptions}" />
+            </apex:selectList>
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Select a state:</h2>
+          </td>
+          <td>
+            <apex:selectList value="{!selectedState}" size="5">
+              <apex:selectOptions value="{!stateOptions}" />
+            </apex:selectList>
+          </td>
+        </tr>
+      </table>
+
+      <br/>
+
+    </apex:define>
+
+  </apex:composition>
+
+</apex:page>

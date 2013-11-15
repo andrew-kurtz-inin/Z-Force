@@ -1,0 +1,20 @@
+<apex:page controller="CustomTiersSample">
+    <script type="text/javascript">
+        function showResult(success){
+            if(success == true){
+                alert("Set custom tiers is successful.  Please check the debug log to preview the changed tiers. ");
+            }else{
+                alert("Set custom tiers has failed. Please make sure your quote ID is valid.");
+            }
+        }
+    </script>
+    <span style="color: #6FB440; font-size: 16px; position:relative; top:20px">This page demonstrates the usage of set custom tiers for a recurring volume pricing charge. Please enter the ID of the quote which should contain one rate plan with at least one Recurring Volume Pricing charge (DecimalPlaces of UOM should be 0). We will give 50% discount for last tier and add a new tier into the charge tiers. </span>
+    <apex:form style="top:20px; position:relative;">
+        Quote ID:&nbsp;&nbsp; <apex:inputText value="{!quoteId}"
+            id="quoteId"
+            title="Please enter the ID of the quote which should contains one rate plan which at least has one Recurring Volume Pricing charge (UOM DecimalPlaces should be 0) We will give 50% discount for last tier and add a new tier into the charge tiers." /> &nbsp;&nbsp;
+        <apex:CommandButton value="Update Custom Tiers"
+            action="{!setCustomTiers}"
+            oncomplete="showResult({!success})" />
+    </apex:form>
+</apex:page>

@@ -1,0 +1,56 @@
+/*    Copyright (c) 2012 Zuora, Inc.
+ *
+ *   Permission is hereby granted, free of charge, to any person obtaining a copy of 
+ *   this software and associated documentation files (the "Software"), to use copy, 
+ *   modify, merge, publish the Software and to distribute, and sublicense copies of 
+ *   the Software, provided no fee is charged for the Software.  In addition the
+ *   rights specified above are conditioned upon the following:
+ *
+ *   The above copyright notice and this permission notice shall be included in all
+ *   copies or substantial portions of the Software.
+ *
+ *   Zuora, Inc. or any other trademarks of Zuora, Inc.  may not be used to endorse
+ *   or promote products derived from this Software without specific prior written
+ *   permission from Zuora, Inc.
+ *
+ *   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL
+ *   ZUORA, INC. BE LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES
+ *   (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ *   LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ *   ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ *   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+Zuora for Salesforce Sample Code Package: Zuora for Salesforce ZDK Sample Code
+
+INTRODUCTION
+------------
+
+This sample implementation contains the following components: 
+(1) LookupComponent
+(2) PropertyComponent
+(3) Quote Wizard
+(4) SelectProduct
+(5) Custom tiers global methods
+(6) QuotePreview component
+
+A complete documentation can be found in the "Zuora for Salesforce ZDK Sample Code Doc.pdf" file. 
+
+PRE-REQUISITES
+-------------
+
+This sample code package is an unmanaged package that depends on the following Z-Force managed packages: 
+- Zuora for Salesforce 360 Version 2.70
+- Zuora for Salesforce Quotes Version 6.0
+
+INSTALLATION GUIDE
+-------------
+
+This sample code package can be downloaded from the following installation URL: 
+
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000AwI8
+
+

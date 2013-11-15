@@ -1,0 +1,42 @@
+<apex:page standardController="zqu__Quote__c" title="Property Component Sample" extensions="PropertyComponentSampleController" sidebar="true" showHeader="true">
+  
+  <apex:sectionHeader title="Property Compoment" subtitle="Sample" id="quoteTitle" />
+  <apex:form id="quoteForm">
+    <zqu:PropertyComponent options="{!theOptions}">
+      
+      <!-- Custom Rendered Fields -->
+      <apex:outputPanel styleClass="customRenderedFieldPanel" rendered="{!IF(field.name == 'Custom_Picklist_Field__c', true, false)}">
+        <apex:outputPanel style="float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '17.1%','34.5%')};" styleClass="labelCol">
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+        </apex:outputPanel>
+        <apex:inputField value="{!quote.Custom_Picklist_Field__c}"
+                         required="{!field.isRequired}"
+                         onchange="displayStatusModal();changeCustomPicklist(this.options[this.selectedIndex].value);" 
+                         rendered="{!theOptions.isEditMode}"/>
+        <apex:outputField value="{!quote.Custom_Picklist_Field__c}" rendered="{!NOT(theOptions.isEditMode)}"/>
+      </apex:outputPanel>
+      
+      <apex:outputPanel id="customTextField" styleClass="customRenderedFieldPanel" rendered="{!IF(field.name == 'Custom_Text_Field__c', true, false)}">
+        <apex:outputPanel style="float: left; padding-top: 0px; width:{!IF(fieldSet.isSingleColumn, '17.1%','34.5%')};" styleClass="labelCol">
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+        </apex:outputPanel>
+        <apex:inputField value="{!quote.Custom_Text_Field__c}" required="{!field.isRequired}" rendered="{!theOptions.isEditMode}"/>
+        <apex:outputField value="{!quote.Custom_Text_Field__c}" rendered="{!NOT(theOptions.isEditMode)}"/>
+      </apex:outputPanel>
+      
+    </zqu:PropertyComponent>
+    
+    <!-- Action Function for re-rendering Invoice Owner / Parent Billing Account fields when Currency has been changed -->
+    <apex:actionFunction name="changeCustomPicklistValue" action="{!onChangeCustomPicklist}" rerender="notificationPanel,customTextField" immediate="true" oncomplete="javascript:closeStatusModal();">
+      <apex:param assignTo="{!selectedCustomPicklistValue}" value="" name="val"/>
+    </apex:actionFunction>
+    
+    <script>
+      function changeCustomPicklist(val){
+        changeCustomPicklistValue(val);
+      }
+      
+    </script>
+    
+  </apex:form>
+</apex:page>
