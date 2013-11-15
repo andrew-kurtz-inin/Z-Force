@@ -39,13 +39,13 @@
 > SOFTWARE, EVEN IF ADVISED OF THE
 > POSSIBILITY OF SUCH DAMAGE.
 
-**Zuora Z-Force Sample Code Suite**
+**Zuora for Salesforce Sample Code Suite**
 --
 
 **Introduction**
 --
 
-The Z-Force Sample Code Suite provides executable code examples in unmanaged Force.com packages. 
+The Zuora for Salesforce Sample Code Suite provides executable code examples in unmanaged Force.com packages. 
 
 Zuora Support does not troubleshoot content from GitHub. The sample code is as an example of code 
 that has worked for previous implementations and was created by both Zuora and non-Zuora authors. 
